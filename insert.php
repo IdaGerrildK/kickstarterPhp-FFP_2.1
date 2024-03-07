@@ -10,7 +10,7 @@ if(!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-    echo "Du har nu booket billet(er) <a href='insert.php'>Bestil flere billetter<a/>";
+    echo "Du har nu booket billett(er) <a href='insert.php'>Bestil flere billetter<a/>";
     exit;
 }
 
