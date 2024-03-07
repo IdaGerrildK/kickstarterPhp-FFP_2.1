@@ -20,7 +20,7 @@ if(!empty($_POST["data"])) {
 <head>
     <meta charset="utf-8">
 
-    <title>Sigende titel</title>
+    <title>VISIT</title>
 
     <meta name="robots" content="All">
     <meta name="author" content="Udgiver">
@@ -34,21 +34,21 @@ if(!empty($_POST["data"])) {
 <body>
 
 
-<div class="container">
+<div class="container mt-5">
     <form action="insert.php" method="post">
         <div class="row g-3">
             <div class="col-12 col-md-6">
-                <label for="bilNames" class="form-label">Indtast dit navn(e)</label>
-                <input type="text" class="form-control" id="bilNames" name="data[bilNames]" placeholder="Navn(e)"
+                <label for="bilNames" class="form-label">Navn(e)</label>
+                <input type="text" class="form-control" id="bilNames" name="data[bilNames]" placeholder="Indtast dit navn(e)"
                        value="">
             </div>
             <div class="col-12 col-md-6">
-                <label for="bilEmail" class="form-label">Indtast din email</label>
+                <label for="bilEmail" class="form-label">Email</label>
                 <input type="email" class="form-control" id="bilEmail" name="data[bilEmail]"
-                       placeholder="Email" value="">
+                       placeholder="Indtast din Email" value="">
             </div>
             <div class="col-12">
-                <label for="bilTlf" class="form-label">Indtast dit mobilnummer</label>
+                <label for="bilTlf" class="form-label">Mobilnummer</label>
                 <textarea class="form-control" name="data[bilTlf]" id="bilTlf" placeholder="Indtast dit mobilnummer"></textarea>
             </div>
 
