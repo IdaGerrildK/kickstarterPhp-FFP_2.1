@@ -5,7 +5,7 @@ if(!empty($_POST["data"])) {
     $data = $_POST["data"];
 
 
-    $sql = "INSERT INTO produkter(bilNames, bilEmail, bilTlf, bilAntal) VALUES(:bilNames, :bilEmail, :bilTlf, :bilAntal)";
+    $sql = "INSERT INTO billetkoeb(bilNames, bilEmail, bilTlf, bilAntal) VALUES(:bilNames, :bilEmail, :bilTlf, :bilAntal)";
     $bind = [":bilNames" => $data["bilNames"], ":bilEmail" => $data["bilEmail"], ":bilTlf" => $data["bilTlf"], ":bilAntal" => $data["bilAntal"]];
 
     $db->sql($sql, $bind, false);
@@ -44,13 +44,19 @@ if(!empty($_POST["data"])) {
             </div>
             <div class="col-12 col-md-6">
                 <label for="bilEmail" class="form-label">Indtast din email</label>
-                <input type="number" step="0.01" class="form-control" id="bilEmail" name="data[bilEmail]"
+                <input type="email" class="form-control" id="bilEmail" name="data[bilEmail]"
                        placeholder="Email" value="">
             </div>
             <div class="col-12">
                 <label for="bilTlf" class="form-label">Indtast dit mobilnummer</label>
                 <textarea class="form-control" name="data[bilTlf]" id="bilTlf" placeholder="Indtast dit mobilnummer"></textarea>
             </div>
+
+            <div class="col-12">
+                <label for="bilAntal" class="form-label">Antal mennesker</label>
+                <textarea class="form-control" name="data[bilAntal]" id="bilAntal" placeholder="Indtast dit antal mennesker"></textarea>
+            </div>
+
             <div class="col-12 col-md-4 offset-md-8">
                 <button type="submit" class="btn btn-primary w-100">Opret</button>
             </div>
