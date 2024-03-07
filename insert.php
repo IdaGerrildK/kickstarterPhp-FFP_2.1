@@ -5,12 +5,12 @@ if(!empty($_POST["data"])) {
     $data = $_POST["data"];
 
 
-    $sql = "INSERT INTO produkter(prodNavn,prodBeskrivelse, prodPris) VALUES(:prodNavn, :prodBeskrivelse, :prodPris)";
-    $bind = [":prodNavn" => $data["prodNavn"], ":prodBeskrivelse" => $data["prodBeskrivelse"], ":prodPris" => $data["prodPris"]];
+    $sql = "INSERT INTO produkter(bilNames, bilEmail, bilTlf, bilAntal) VALUES(:bilNames, :bilEmail, :bilTlf, :bilAntal)";
+    $bind = [":bilNames" => $data["bilNames"], ":bilEmail" => $data["bilEmail"], ":bilTlf" => $data["bilTlf"], ":bilAntal" => $data["bilAntal"]];
 
     $db->sql($sql, $bind, false);
 
-    echo "Produktet er nu indsat. <a href='insert.php'>Indsæt et produkt mere<a/>";
+    echo "Du har nu booket billet(er) <a href='insert.php'>Bestil flere billetter<a/>";
     exit;
 }
 
@@ -38,18 +38,18 @@ if(!empty($_POST["data"])) {
     <form action="insert.php" method="post">
         <div class="row g-3">
             <div class="col-12 col-md-6">
-                <label for="prodNavn" class="form-label">Produkt navn</label>
-                <input type="text" class="form-control" id="prodNavn" name="data[prodNavn]" placeholder="Produkt navn"
+                <label for="bilNames" class="form-label">Indtast dit navn(e)</label>
+                <input type="text" class="form-control" id="bilNames" name="data[bilNames]" placeholder="Navn(e)"
                        value="">
             </div>
             <div class="col-12 col-md-6">
-                <label for="prodPris" class="form-label">Produkt pris</label>
-                <input type="number" step="0.01" class="form-control" id="prodPris" name="data[prodPris]"
-                       placeholder="Produkt pris" value="">
+                <label for="bilEmail" class="form-label">Indtast din email</label>
+                <input type="number" step="0.01" class="form-control" id="bilEmail" name="data[bilEmail]"
+                       placeholder="Email" value="">
             </div>
             <div class="col-12">
-                <label for="prodBeskrivelse" class="form-label">Produkt Beskrivelse</label>
-                <textarea class="form-control" name="data[prodBeskrivelse]" id="prodBeskrivelse" placeholder="Produkt beskrivelse"></textarea>
+                <label for="bilTlf" class="form-label">Indtast dit mobilnummer</label>
+                <textarea class="form-control" name="data[bilTlf]" id="bilTlf" placeholder="Indtast dit mobilnummer"></textarea>
             </div>
             <div class="col-12 col-md-4 offset-md-8">
                 <button type="submit" class="btn btn-primary w-100">Opret</button>
