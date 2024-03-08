@@ -29,6 +29,8 @@ if(!empty($_POST["data"])) {
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://kit.fontawesome.com/bd6ccfb77e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
