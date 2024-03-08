@@ -10,7 +10,7 @@ if(!empty($_POST["data"])) {
 
     $db->sql($sql, $bind, false);
 
-    echo "Du har nu booket billett(er) <a href='insert.php'>Bestil flere billetter<a/>";
+    echo "Du har nu booket billett(er) <a href='alle.html'>Tilbage til forsiden<a/>";
     exit;
 }
 
@@ -31,12 +31,14 @@ if(!empty($_POST["data"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <script src="https://kit.fontawesome.com/bd6ccfb77e.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
 
 
-<div class="container mt-5">
+<div class="container mt-5 bg-grundfarve">
     <form action="insert.php" method="post">
         <div class="row g-3">
             <div class="col-12 col-md-6">
@@ -60,7 +62,7 @@ if(!empty($_POST["data"])) {
             </div>
 
             <div class="col-12 col-md-4 offset-md-8">
-                <button type="submit" class="btn btn-primary w-100">Opret</button>
+                <button type="submit" class="btn btn-hjemmegron w-100">Opret</button>
             </div>
         </div>
     </form>

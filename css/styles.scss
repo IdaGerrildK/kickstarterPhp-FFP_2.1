@@ -13,7 +13,8 @@ $custom-colors: (
 	"hjemmegron": $green-600,
 	"trykknapgron": $green-800,
 	"hjemmeside": adjust-color(#a4f1bd),
-	"cardfarve": adjust-color(#e1cfaa)
+	"cardfarve": adjust-color(#e1cfaa),
+	"grundfarve": adjust-color(#3cb371)
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
