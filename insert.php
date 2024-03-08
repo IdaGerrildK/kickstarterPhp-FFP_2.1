@@ -37,10 +37,10 @@ if(!empty($_POST["data"])) {
 
 <body>
 
-<i class="fa-solid fa-house home text-hjemmegron m-2"></i></button>
+<a href="alle.html"><i class="fa-solid fa-house home text-hjemmegron m-2"></i></a>
 
 <div class="container d-flex justify-content-center align-items-center mb-5">
-    <img src="pic/logofeardiglille.png" alt="logo">
+    <a href="knapper.html"><img src="pic/logofeardiglille.png" alt="logo"></a>
 </div>
 
 <div class="container mt-5 bg-grundfarve">
