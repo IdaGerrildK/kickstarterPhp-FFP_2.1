@@ -42,8 +42,8 @@ if(!empty($_POST["data"])) {
     <form action="insert.php" method="post">
         <div class="row g-3">
             <div class="col-12 col-md-6">
-                <label for="bilNames" class="form-label">Navn(e)</label>
-                <input type="text" class="form-control" id="bilNames" name="data[bilNames]" placeholder="Indtast dit navn(e)"
+                <label for="bilNames" class="form-label">Navn</label>
+                <input type="text" class="form-control" id="bilNames" name="data[bilNames]" placeholder="Indtast dit navn"
                        value="">
             </div>
             <div class="col-12 col-md-6">
