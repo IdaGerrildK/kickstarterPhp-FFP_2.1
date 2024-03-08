@@ -37,6 +37,11 @@ if(!empty($_POST["data"])) {
 
 <body>
 
+<i class="fa-solid fa-house home text-hjemmegron m-2"></i></button>
+
+<div class="container d-flex justify-content-center align-items-center mb-5">
+    <img src="pic/logofeardiglille.png" alt="logo">
+</div>
 
 <div class="container mt-5 bg-grundfarve">
     <form action="insert.php" method="post">
