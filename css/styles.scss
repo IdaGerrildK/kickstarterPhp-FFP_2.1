@@ -12,8 +12,8 @@ $link-decoration: none;
 $custom-colors: (
 	"hjemmegron": $green-600,
 	"trykknapgron": $green-800,
-	"hjemmeside": adjust-color(#a4f1bd)
-
+	"hjemmeside": adjust-color(#a4f1bd),
+	"cardfarve": adjust-color(#e1cfaa)
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
