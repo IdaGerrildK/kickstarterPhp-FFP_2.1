@@ -26,3 +26,12 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	font-size: 25px;
 	;
 }
+
+.btn {
+	background-color: transparent;
+}
+
+.btn img {
+	width: 100px;
+	height: 100px;
+}
