@@ -10,7 +10,7 @@ $link-decoration: none;
 
 // 4. Include any default map overrides here
 $custom-colors: (
-	"hjemmegron": $green-400
+	"hjemmegron": $green-600
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
