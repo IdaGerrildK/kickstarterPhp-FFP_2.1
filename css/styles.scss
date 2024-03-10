@@ -24,8 +24,8 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // 5. Du kan lave styling her...
 
 
-:root{
-	--bs-body-font-family: inter;
+body{
+	font-family: "Inter", sans-serif;
 }
 
 
@@ -42,6 +42,71 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	width: 100px;
 	height: 100px;
 }
+
+
+.forsideknap {
+	width: 500px;
+	height: 180px;
+	background-image: url(pic/natur.jpg);
+	background-size: cover;
+	color: white;
+	border: darkgreen;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
