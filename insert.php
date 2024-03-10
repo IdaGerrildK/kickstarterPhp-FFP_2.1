@@ -32,6 +32,10 @@ if(!empty($_POST["data"])) {
 
     <script src="https://kit.fontawesome.com/bd6ccfb77e.js" crossorigin="anonymous"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
 
 </head>
 
