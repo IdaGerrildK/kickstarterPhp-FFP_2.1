@@ -51,20 +51,6 @@ body{
 	background-size: cover;
 	color: white;
 	border: darkgreen;
-
-}
-#videoBG{
-	position: fixed;
-	z-index: -1;
-	 left: 50%;
-	 top: 50%;
-	 transform(translate: -50%, -50%);
-}
-@media (min-aspect-ratio: 16/9){
-	#videoBG{
-		width: auto;
-		height: 100%;
-	}
 }
 
 
